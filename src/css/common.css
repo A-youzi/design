@@ -1,0 +1,129 @@
+.frt{
+    float: right;
+}
+.flt{
+    float: left;
+}
+.navbar-nav li a{
+    position: relative;
+}
+.navbar-nav li a::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #000;
+    bottom: 0;
+    left: 17px;
+    right: 17px;
+    display: none;
+}
+.navbar-nav li a:hover::after{
+    content: "";
+    display: block;
+}
+.cCommetTitle{
+    text-align: center;
+    line-height: 1;
+}
+.cCommetTitle .title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    display: block;
+}
+.cCommetTitle .en-title{
+    color: rgba(0,0,0,.4);
+    font-size: 14px;
+    margin-top: 10px;
+}
+.cCommetTitle a{
+    text-decoration: none;
+    color: inherit;
+}
+.cCommetTitle .nav{
+    display: flex;
+    margin-top: 15px;
+}
+.cCommetTitle .nav a{
+    flex: 1;
+    font-size: 12px;
+    color: rgba(0,0,0,.6);
+    position: relative;
+}
+.cCommetTitle .nav a::before{
+    content: "";
+    width: 1px;
+    height: 9px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    margin-top: 1px;
+}
+.cCommetTitle .nav a:first-child::before{
+    display: none;
+}
+
+
+@media (min-width:768px){
+    .cCommetTitle .title{
+        font-size: 20px;
+    }
+    .cCommetTitle .nav a{
+        font-size: 14px;
+    }
+    .commentdistance{
+        margin-top: 50px;
+    }
+}
+@media (min-width:992px){
+    .cCommetTitle{
+        margin-top:25px; 
+    }
+    .cCommetTitle .title{
+        font-size: 22px;
+        float: left;
+        margin-left: 2px;
+        line-height: 32px;
+    }
+    .cCommetTitle .en-title{
+        margin-top: 12px;
+        margin-left: 15px;
+        font-size: 16px;
+        float: left;
+    }
+    .cCommetTitle .nav{
+        margin-top: 0;
+        line-height: 32px;
+        margin-left: 17%;
+    }
+    .cCommetTitle .nav a{
+        float: left;
+    }
+    .cCommetTitle .nav a::before{
+        margin-top: 12px;
+    }
+    .commentdistance{
+        margin-top: 80px;
+    }
+}
+@media (min-width:1200px){
+    .commentdistance{
+        margin-top: 90px;
+    }
+}
+@media (min-width:1400px){
+    .commentdistance{
+        margin-top: 100px;
+    }
+}
+/*
+@media (min-width:1600px){
+    .commentdistance{
+        margin-top: 130px;
+    }
+}
+@media (min-width:1920px){
+    .commentdistance{
+        margin-top: 154px;
+    }
+}*/
