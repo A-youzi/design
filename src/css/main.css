@@ -13,6 +13,9 @@ a:hover{
 .pos-r{
     position: relative;
 }
+
+/* index-banner */
+
 .index-banner{
     height: 100px;
     display: flex;
@@ -53,14 +56,15 @@ a:hover{
 .index-banner .description{
     display: none;
 }
+
+/* 幻灯片点点 */
+
 .carousel-indicators{
         display: none;
     }
-/*
-.project-box{
-    margin-top: 35px;
-}
-*/
+
+/* .project */
+
 .project-box a{
     display: block;
 }
@@ -262,10 +266,13 @@ a:hover{
 .spe-distance{
     margin-top: 20px;
 }
+
+/* plan */
+
 .plan-distance{
     margin-top: 40px;
 }
-.container-fiuid{
+.plan-box{
     border-top: 1px solid #eee;
     margin-top: 30px;
 }
@@ -274,7 +281,7 @@ a:hover{
     margin-bottom: 100px;
     color: #000;
 }
-.container-fiuid .img-house{
+.plan-box .img-house{
     float: right;
 }
 .house-text{
@@ -312,7 +319,7 @@ a:hover{
 .plan-right .right-comment-title{
     font-weight: bold;
 }
-.container-fiuid .img-droplight{
+.plan-box .img-droplight{
     float: right;
 }
 .right-comment-text{
@@ -330,15 +337,86 @@ a:hover{
     float: left;
 }
 .right-bottom-text{
-    margin-left: -2%;
+    margin-left: -12%;
     width: 40%;
 }
 
+/* introduce-big-box */
+
+.introduce-big-box{
+    margin-top: 100px;
+    position: relative;
+}
+.introduce-big-box .line-0{
+    background-color: #efefef;
+    
+}
+.big-box img{
+    width: 100%;
+}
+
+/* introduce-small-box */
+
+.introduce-small-box{
+    height: 200px;
+}
+.small-box{
+    padding: 0;
+    
+}
+.small-box img{
+/*    width: 40%;*/
+    padding-left: 0;
+    height: 200px;
+}
+.small-box-info{
+/*    width: 75%;*/
+    padding-left: 10px;
+    margin-top: 20px;
+    line-height: 1;
+    overflow: hidden;
+    
+  
+}
+.small-box-info .title{
+    font-size: 16px;
+    color: rgba(0,0,0,.6);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.small-box-info .des-title{
+    color: #ccc;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.small-box-info p{
+    line-height: 1.5;
+    font-size: 12px;
+    color: rgba(0,0,0,.5);
+}
+.small-box-info .more{
+    color: #f5b834;
+    border: 1px solid #f5b834;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+
 
 @media (min-width:768px){
+    
+    /* 幻灯片 */
+    
     .carousel-indicators{
         display: block;
     }
+    
+    /* index-banner */
+    
     .index-banner{
         width: 750px;
         margin: 0 auto;
@@ -346,6 +424,9 @@ a:hover{
     .banner-icon{
         margin: 20px auto 15px;
     }
+    
+    /* project */
+    
     .project-box .hover-text{
         width: 180px;
         font-size: 14px;
@@ -378,11 +459,16 @@ a:hover{
         display: block;
     }
     
+    
+    
 
 
 
 }
 @media (min-width:992px){
+    
+    /* 幻灯片 */
+    
     .carousel-indicators{
         display: block;
     }
@@ -393,12 +479,18 @@ a:hover{
     .banner-icon{
         margin: 25px auto 15px;
     }
+    
+    /* project */
+    
     .project-box .hover-text{
         bottom:15%;
     }
     .project-box .project-button{
         margin-bottom: 0px;
     }
+    
+    /* specialty */
+    
     .specialty-inner-box{
         display: flex;
     }
@@ -431,23 +523,69 @@ a:hover{
     }
     .right-bottom-text{
         width: 35%;
+        margin-left: -12%;
     }
     .comment-des{
         margin-bottom: 0;
     }
-    .container-fiuid .plan-left{
-        margin-bottom: 200px;
-        padding-bottom: 200px;
+    
+    /* plan */
+    
+    .plan-box{
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    .big-box img{
+        margin-top: 0;
         float: left;
-        color: #000;
+    }
+    .big-box img::after{
+        content: "";
+        width: 100%;
+        float: right;
+        background-color: #ccc;
     }
     
+   /* small-box */
     
+   .introduce{
+    position: relative;
+  }
+    .small-box{
+        padding: 0;
+        background-color: #fff;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top:6%;
+/*        bottom: 0;*/
+    }
+    .small-box-info{
+       padding-left: 20px;
+        padding-right: 10px;
+/*        width: 55%;*/
+    }
+    .small-box img{
+/*        width: 40%;*/
+        height: 250px;
+    }
+    .introduce-small-box .more{
+        margin-top: 20px;
+    }
+
 }
 @media (min-width:1200px){
+    
+    /* 幻灯片 */
+    
     .carousel-indicators{
         display: none;
     }
+    
+    /* index-banner */
+    
     .index-banner{
         position: relative;
         min-height: 160px;
@@ -470,6 +608,9 @@ a:hover{
         line-height: 1;
         margin-bottom: 25px;
     }
+    
+    /* project */
+    
      .project-box .hover-text{
         width: 210px;
     }
@@ -495,9 +636,32 @@ a:hover{
         width: 50%
      }
     
+    /* plan */
+    
+    .plan-box{
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+    }
+    /* small-box */
+    
+
+    .small-box{
+        top:15%;
+    /*    bottom: 0;*/
+    }
+    .small-box-info{
+       padding-left: 20px;
+       padding-right: 20px;
+/*        width: 45%;*/
+    }
+
+    
     
 }
 @media (min-width:1400px){
+    
+    /* index-banner */
+    
     .index-banner{
         width: 1200px;
         min-height: 160px;
